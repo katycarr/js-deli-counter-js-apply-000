@@ -1,3 +1,4 @@
+
 // initialize line array
 var katzDeli = [];
 
@@ -48,5 +49,22 @@ function currentLine(katzDeliLine) {
       }
     }
     return stringList;
+=======
+var katzDeli = [];
+
+var takeANumber = function(katzDeliLine, name) {
+  katzDeli = katzDeliLine.push(name);
+  var position = katzDeliLine.length()+1;
+  console.log(`Welcome, ${name}. You are number ${position} in line.`)
+};
+
+var nowServing = funtion() {
+  if(katzDeli.length === 0) {
+    return "There is nobody waiting to be served!"
+  }
+  else {
+    var first = katzDeli[0];
+    katzDeli.shift();
+    return first;
   }
 }
